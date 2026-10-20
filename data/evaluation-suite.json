@@ -1,0 +1,54 @@
+{
+  "version": "1.0.0",
+  "asOf": "2026-10-02",
+  "purpose": {"zh": "固定題目用於保存真實配對回答與人工評分；題庫不是標準答案，也不是已完成的品質證據。", "en": "Fixed questions for saved paired responses and human ratings. This suite is not an answer key or completed quality evidence."},
+  "rubric": {
+    "citationSupport": {"zh": "引用支持程度：1＝關鍵引用多處無法支持主張；3＝支持與限制參半；5＝抽查的關鍵主張均有適切支持。無法查閱請留空。", "en": "Citation support: 1 = key citations often do not support claims; 3 = mixed support and limitations; 5 = checked key claims have appropriate support. Leave unknown when sources cannot be assessed."},
+    "omissions": {"zh": "重要遺漏處理：1＝漏掉會改變決策的因素；3＝有涵蓋但仍有重要缺口；5＝評閱範圍內的重要替代解釋、限制與風險均有處理。分數越高代表遺漏越少。", "en": "Coverage of important omissions: 1 = misses decision-changing factors; 3 = partial coverage with important gaps; 5 = addresses important alternatives, limitations and risks within the review scope. Higher means fewer omissions."},
+    "usefulness": {"zh": "決策實用性：1＝無法採用或忽略限制；3＝部分可用但條件不足；5＝建議有條件、可執行且指出何時應修正。", "en": "Decision usefulness: 1 = unusable or ignores constraints; 3 = partly useful but underspecified; 5 = actionable conditional advice with revision triggers."}
+  },
+  "cases": [
+    {
+      "id": "academic-cross-session", "topic": "academic",
+      "title": {"zh": "跨時段 BCI 的低成本校準", "en": "Low-cost cross-session BCI calibration"},
+      "question": {"zh": "針對 EEG 運動想像 BCI 的跨時段泛化，少量有標記校準資料是否值得蒐集？比較完全不校準、少量校準與持續更新，依近期公開研究區分離線測試與真正線上證據，提出可驗證的研究設計。", "en": "For cross-session generalization in EEG motor-imagery BCI, is collecting a small labeled calibration set worthwhile? Compare zero calibration, small calibration and continuing adaptation. Distinguish offline evaluation from genuine online evidence and propose a testable study."},
+      "decision": {"zh": {"goal": "選擇能驗證跨時段效益的下一個實驗", "options": "零校準、少量有標記校準、持續更新", "constraints": "研究資源有限；需區分資料洩漏與實際可部署流程", "timeframe": "未來 3 個月"}, "en": {"goal": "Choose an experiment that tests cross-session benefit", "options": "Zero calibration; limited labeled calibration; continuing adaptation", "constraints": "Limited research resources; separate leakage from deployable protocols", "timeframe": "Next 3 months"}},
+      "focus": {"zh": "資料切分、校準預算、評估對象與結論適用範圍", "en": "Data splits, calibration budgets, evaluation populations and scope of conclusions"}
+    },
+    {
+      "id": "academic-small-sample", "topic": "academic",
+      "title": {"zh": "小樣本研究的模型選擇", "en": "Model choice with a small research sample"},
+      "question": {"zh": "小型研究只有 40 位受試者、每人多次量測。比較簡單可解釋模型與較複雜機器學習模型時，應如何設計驗證、避免洩漏並評估不確定性？哪些證據才能支持複雜模型值得採用？引用適用的方法學研究，避免把多筆量測當成獨立受試者。", "en": "A small study has 40 participants and repeated measurements per person. How should interpretable baseline models and complex machine-learning models be compared without leakage, and how should uncertainty be evaluated? What evidence would justify the complex model? Cite relevant methodology and do not treat repeated measurements as independent participants."},
+      "decision": {"zh": {"goal": "選擇可靠的模型比較方案", "options": "簡單模型、複雜模型", "constraints": "40 位受試者且有重複量測；暫無外部資料", "timeframe": "下一版研究分析"}, "en": {"goal": "Choose a defensible model-comparison protocol", "options": "Simple model; complex model", "constraints": "40 participants with repeated measures; no external dataset yet", "timeframe": "Next analysis revision"}},
+      "focus": {"zh": "獨立樣本單位、巢狀驗證、效應大小及不確定性", "en": "Independent sampling units, nested validation, effect sizes and uncertainty"}
+    },
+    {
+      "id": "daily-sleep-schedule", "topic": "health",
+      "title": {"zh": "改善睡眠作息的優先順序", "en": "Priorities for improving sleep schedules"},
+      "question": {"zh": "對一般健康成人，固定起床時間、延長在床時間、減少晚間咖啡因，哪種行為調整最值得優先嘗試改善白天精神？比較研究設計、族群、效益及限制，提出兩週內可觀察的低風險行為試驗。情境未提供病史，不要自行診斷或建議個人藥物治療。", "en": "For generally healthy adults, which behavior is most worth trying first to improve daytime alertness: a consistent wake time, more time in bed, or reducing evening caffeine? Compare study design, populations, benefits and limits, and suggest a low-risk two-week behavioral trial. No medical history is supplied; do not diagnose or recommend individualized medication."},
+      "decision": {"zh": {"goal": "改善白天精神", "options": "固定起床、延長睡眠機會、減少晚間咖啡因", "constraints": "僅一般健康成人的行為層面；每日記錄負擔低", "timeframe": "兩週"}, "en": {"goal": "Improve daytime alertness", "options": "Consistent waking; more sleep opportunity; less evening caffeine", "constraints": "Behavioral support for generally healthy adults; low daily tracking burden", "timeframe": "Two weeks"}},
+      "focus": {"zh": "研究適用性、替代解釋、效果衡量與需要專業評估的界線", "en": "Applicability, alternative explanations, outcome measurement and boundaries for professional evaluation"}
+    },
+    {
+      "id": "daily-strength-frequency", "topic": "health",
+      "title": {"zh": "每週兩次或四次阻力訓練", "en": "Two versus four weekly resistance sessions"},
+      "question": {"zh": "對一般健康的阻力訓練初學者，若每週總訓練量相近，每週練兩次或四次，對肌力、肌肥大與持續執行有何差異？依研究比較而不是單靠機制推論，提出工作繁忙者的條件式選擇，並指出研究未回答的部分。", "en": "For generally healthy beginners in resistance training, how do two versus four weekly sessions compare for strength, hypertrophy and adherence when weekly training volume is similar? Use comparative research rather than mechanism alone, give conditional advice for a busy adult, and state what the evidence does not answer."},
+      "decision": {"zh": {"goal": "挑選能長期維持的訓練安排", "options": "每週兩次、每週四次", "constraints": "總訓練量相近、工作繁忙、初學者", "timeframe": "未來 12 週"}, "en": {"goal": "Choose a sustainable training schedule", "options": "Two or four sessions per week", "constraints": "Comparable weekly volume; busy schedule; beginner", "timeframe": "Next 12 weeks"}},
+      "focus": {"zh": "等量比較、依從性、研究期間與個別差異", "en": "Volume-matched comparisons, adherence, study duration and individual variation"}
+    },
+    {
+      "id": "technology-bottlenecks", "topic": "technology",
+      "title": {"zh": "未來十年的技術瓶頸", "en": "Technology bottlenecks over the next decade"},
+      "question": {"zh": "未來十年，AI、能源儲存與生物工程哪些瓶頸最可能限制廣泛採用？參考過去電腦及智慧型手機的普及，區分技術可行性、成本、基礎設施和社會採用。給出可觀察指標與學習方向，不做投資報酬或必然贏家預測。", "en": "Over the next decade, which bottlenecks are most likely to constrain broad adoption of AI, energy storage and bioengineering? Use computer and smartphone adoption as historical comparisons, distinguishing technical feasibility, cost, infrastructure and social adoption. Give observable indicators and learning priorities, not investment-return or certain-winner predictions."},
+      "decision": {"zh": {"goal": "選擇值得持續追蹤的技術方向", "options": "AI、能源儲存、生物工程", "constraints": "學習時間有限；關注跨產業採用而非股價", "timeframe": "未來十年"}, "en": {"goal": "Choose technology areas worth following", "options": "AI; energy storage; bioengineering", "constraints": "Limited learning time; focus on cross-industry adoption rather than share prices", "timeframe": "Next decade"}},
+      "focus": {"zh": "歷史類比限制、採用指標、反證條件與近期研究", "en": "Limits of historical analogies, adoption indicators, falsifiers and recent research"}
+    },
+    {
+      "id": "technology-long-horizon", "topic": "technology",
+      "title": {"zh": "二十年至五十年的技術情境", "en": "Technology scenarios twenty to fifty years ahead"},
+      "question": {"zh": "若要為未來 20、30、40、50 年規劃可轉移的研究技能，應如何比較 AI、先進能源與生物工程的可能發展？明確區分已知研究、條件推論與長期情境；不要編造精確機率。提出跨情境仍有用的技能與會觸發重新評估的證據。", "en": "When planning transferable research skills for 20, 30, 40 and 50 years ahead, how should possible developments in AI, advanced energy and bioengineering be compared? Clearly separate established research, conditional inference and long-range scenarios; do not invent precise probabilities. Recommend skills useful across scenarios and evidence that would trigger reassessment."},
+      "decision": {"zh": {"goal": "選擇跨情境有用的研究技能", "options": "專攻單一技術、建立跨領域基礎、定期調整方向", "constraints": "高度不確定且無可靠長期技術排名", "timeframe": "20 至 50 年"}, "en": {"goal": "Choose research skills useful across scenarios", "options": "Specialize in one technology; build cross-disciplinary foundations; periodically revise direction", "constraints": "High uncertainty and no reliable long-range technology ranking", "timeframe": "20 to 50 years"}},
+      "focus": {"zh": "不確定性、情境條件、可轉移能力與更新策略", "en": "Uncertainty, scenario conditions, transferable skills and revision strategy"}
+    }
+  ]
+}

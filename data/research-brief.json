@@ -1,0 +1,367 @@
+{
+  "schemaVersion": 1,
+  "id": "technology-horizons-2026",
+  "asOf": "2026-09-20",
+  "status": "prepared_research_brief",
+  "isLiveModelDebate": false,
+  "titleZh": "AI 之後：未來 50 年，哪些技術值得持續關注？",
+  "titleEn": "After AI: Which technologies deserve attention over the next 50 years?",
+  "questionZh": "未來 10、20、30、40、50 年，哪些技術可能最具跨產業影響力？從電氣化、微軟與個人電腦、智慧型手機的歷史，可以學到什麼，以及今天應如何選擇研究與學習方向？",
+  "questionEn": "Which technologies could have the greatest cross-industry influence in 10, 20, 30, 40 and 50 years? What can electrification, Microsoft and personal computers, and smartphones teach us about research and learning decisions today?",
+  "provenanceZh": "由助理在模型討論前整理並開啟來源查核的研究簡報，與實際討論紀錄分開保存。這是有界資料蒐集，不是系統性文獻回顧。",
+  "provenanceEn": "An assistant-prepared brief with opened and checked sources, prepared before model discussion and stored separately. This is a bounded evidence scan, not a systematic review.",
+  "scopeZh": "以 2026 年為起點；引領潮流定義為跨產業用途、持續改善、實際採用與可持續的成本效益，不以新聞熱度、單一公司股價或單次實驗紀錄排序。",
+  "scopeEn": "Horizons start in 2026. Leadership means cross-industry usefulness, sustained improvement, real adoption and viable economics, rather than media attention, a company's share price or a one-off laboratory record.",
+  "summaryZh": "目前較合理的工作假說是：下一波可能是 AI 成為基礎層，再與機器人、能源系統及生物工程結合。2036 年仍可根據採用與瓶頸做有條件判斷；2046 年後分支增多；2056–2076 年應用情境與里程碑管理，而不是指定某項技術必然接棒。",
+  "summaryEn": "A useful working hypothesis is that AI becomes an infrastructure layer and combines with robotics, energy systems and biological engineering. Adoption and bottlenecks can inform conditional judgments about 2036; branches multiply after 2046. For 2056–2076, use scenarios and milestones instead of declaring a certain successor.",
+  "evidenceLegend": [
+    {
+      "id": "observation",
+      "labelZh": "已觀察證據",
+      "labelEn": "Observed evidence",
+      "descriptionZh": "來源直接報告的歷史、統計或實驗結果。",
+      "descriptionEn": "Historical, statistical or experimental findings reported directly by a source."
+    },
+    {
+      "id": "inference",
+      "labelZh": "有條件推論",
+      "labelEn": "Conditional inference",
+      "descriptionZh": "本簡報對現有證據的解讀；不是來源作者對指定年份的預言。",
+      "descriptionEn": "Interpretation by this brief, not a source author's prediction for the stated year."
+    },
+    {
+      "id": "scenario",
+      "labelZh": "長期情境",
+      "labelEn": "Long-term scenario",
+      "descriptionZh": "用來比較可能路徑；沒有經驗證的機率或確定時間表。",
+      "descriptionEn": "Possible paths for comparison, without validated probabilities or a certain timetable."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "General Purpose Technologies and Surges in Productivity: Historical Reflections on the Future of the ICT Revolution",
+      "url": "https://www.nuffield.ox.ac.uk/economics/history/paper31/a4.pdf",
+      "date": "1999-09",
+      "type": "historical_research_working_paper",
+      "publisher": "University of Oxford / David and Wright",
+      "summaryZh": "電氣化的效益伴隨工廠配置、組織與勞動市場變化；技術擴散並非自動或各國一致。",
+      "summaryEn": "Electrification's gains accompanied changes in factory layouts, organizations and labour markets; diffusion was neither automatic nor identical across countries.",
+      "limitationZh": "歷史研究提供機制類比，不能把當時的等待年數套成 AI 的倒數計時。",
+      "limitationEn": "Historical mechanisms offer analogies, not a countdown that fixes the timing of AI's benefits."
+    },
+    {
+      "id": "S2",
+      "title": "The Productivity J-Curve: How Intangibles Complement General Purpose Technologies",
+      "url": "https://www.aeaweb.org/articles?id=10.1257/mac.20180386",
+      "date": "2021-01",
+      "type": "peer_reviewed_economics_research",
+      "publisher": "American Economic Journal: Macroeconomics",
+      "summaryZh": "通用技術需要互補的無形投資；組織與軟體投入可使生產力效益延遲呈現，也影響統計衡量。",
+      "summaryEn": "General-purpose technologies require complementary intangible investment. Organizational and software investment can delay measured gains and affect productivity accounting.",
+      "limitationZh": "模型及美國資料分析不保證任何新技術都會成功，也不是 50 年技術排名。",
+      "limitationEn": "The model and US evidence do not guarantee success for every new technology or rank technologies 50 years ahead."
+    },
+    {
+      "id": "S3",
+      "title": "U.S. v. Microsoft: Court's Findings of Fact",
+      "url": "https://www.justice.gov/atr/us-v-microsoft-courts-findings-fact",
+      "date": "1999-11-05",
+      "type": "primary_historical_court_record",
+      "publisher": "U.S. District Court / U.S. Department of Justice",
+      "summaryZh": "法院記錄描述 Windows 使用者與相容應用程式之間的正回饋，以及應用程式進入障礙。",
+      "summaryEn": "The findings describe feedback between Windows users and compatible applications, including the applications barrier to entry.",
+      "limitationZh": "這是 1990 年代特定市場的法院事實認定，不是今天的市場描述，也不能單獨解釋微軟全部歷史。",
+      "limitationEn": "These are findings about a specific 1990s market, not today's market or a complete explanation of Microsoft's history."
+    },
+    {
+      "id": "S4",
+      "title": "Apple Reinvents the Phone with iPhone",
+      "url": "https://www.apple.com/newsroom/2007/01/09Apple-Reinvents-the-Phone-with-iPhone/",
+      "date": "2007-01-09",
+      "type": "primary_historical_product_announcement",
+      "publisher": "Apple",
+      "summaryZh": "首代 iPhone 公告記錄電話、音樂、網路與多點觸控介面的整合，是產品組合創新的歷史例子。",
+      "summaryEn": "The original iPhone announcement documents the integration of telephony, music, internet access and multi-touch interaction.",
+      "limitationZh": "公司當時的產品公告可證明公布內容；不能單靠它證明市場成功、因果關係或整個智慧型手機產業的起源。",
+      "limitationEn": "A company announcement establishes what was announced; it does not establish market success, causal impact or the origin of the whole smartphone industry."
+    },
+    {
+      "id": "S5",
+      "title": "Inside the AI Index: 12 Takeaways from the 2026 Report",
+      "url": "https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report",
+      "date": "2026-04-13",
+      "type": "research_institute_evidence_synthesis",
+      "publisher": "Stanford HAI",
+      "summaryZh": "報告記錄 AI 能力與科學應用進展，同時呈現多步規劃、實體任務、透明度與環境成本的限制。",
+      "summaryEn": "The report records progress in AI capabilities and scientific applications alongside limitations in multistep planning, physical tasks, transparency and environmental costs.",
+      "limitationZh": "不同評測衡量不同能力；不能把基準分數直接當成實際工作可靠性、整體生產力或 AGI 的證明。",
+      "limitationEn": "Benchmarks measure different capabilities; scores do not directly establish workplace reliability, economy-wide productivity or AGI."
+    },
+    {
+      "id": "S6",
+      "title": "Key Questions on Energy and AI — Executive summary",
+      "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+      "date": "2026-04-16",
+      "type": "intergovernmental_analysis_and_projection",
+      "publisher": "International Energy Agency",
+      "summaryZh": "IEA 中央預測資料中心用電由 2025 年 485 TWh 增至 2030 年約 950 TWh；電網、供應鏈與資金形成瓶頸。",
+      "summaryEn": "The IEA's central projection increases data-centre electricity use from 485 TWh in 2025 to about 950 TWh in 2030, with grid, supply-chain and financing constraints.",
+      "limitationZh": "2030 數字是預測，資料中心也不等於全是 AI；成長取決於效率、需求及建設，不能外推至 2076。",
+      "limitationEn": "The 2030 figure is a projection, and data centres are not all AI. Demand, efficiency and construction matter; it cannot be extrapolated to 2076."
+    },
+    {
+      "id": "S7",
+      "title": "World Robotics 2025 — Global Robot Demand in Factories Doubles Over 10 Years",
+      "url": "https://ifr.org/ifr-press-releases/news/global-robot-demand-in-factories-doubles-over-10-years",
+      "date": "2025-09-25",
+      "type": "industry_federation_statistics",
+      "publisher": "International Federation of Robotics",
+      "summaryZh": "IFR 統計 2024 年新增 542,000 台工業機器人，超過十年前兩倍，顯示工廠自動化已有規模。",
+      "summaryEn": "IFR records 542,000 industrial robot installations in 2024, more than twice the level ten years earlier, showing established industrial deployment.",
+      "limitationZh": "工業機器人的安裝數不能證明通用人形或家庭機器人已成熟；產業協會統計也不是隨機試驗。",
+      "limitationEn": "Industrial installations do not establish the readiness of general-purpose humanoid or household robots; federation statistics are not randomized evidence."
+    },
+    {
+      "id": "S8",
+      "title": "Infant with rare, incurable disease is first to successfully receive personalized gene therapy treatment",
+      "url": "https://www.nih.gov/news-events/news-releases/infant-rare-incurable-disease-first-successfully-receive-personalized-gene-therapy-treatment",
+      "date": "2025-05-15",
+      "type": "research_funder_report_of_primary_clinical_study",
+      "publisher": "National Institutes of Health",
+      "primaryStudyDoi": "10.1056/NEJMoa2504747",
+      "summaryZh": "NIH 報告一名 CPS1 缺乏症嬰兒接受客製化體細胞基因編輯，並出現初步臨床改善。",
+      "summaryEn": "NIH reports personalized somatic gene editing in one infant with CPS1 deficiency and early clinical improvement.",
+      "limitationZh": "單一病人與短期結果不能證明長期安全、普遍療效、可負擔性，或延緩一般人的老化。",
+      "limitationEn": "One patient and early outcomes do not establish long-term safety, general efficacy, affordability or slower aging in the wider population."
+    },
+    {
+      "id": "S9",
+      "title": "Reinforcement learning control of quantum error correction",
+      "url": "https://www.nature.com/articles/s41586-026-10759-2",
+      "date": "2026-07-08",
+      "type": "peer_reviewed_experimental_research",
+      "publisher": "Nature / Sivak et al.",
+      "summaryZh": "Willow 處理器實驗以強化學習調整控制參數、改善量子記憶糾錯穩定性，是 AI 與量子硬體互補的實例。",
+      "summaryEn": "Experiments on Willow use reinforcement learning to tune control parameters and improve quantum-memory error-correction stability, illustrating AI and quantum-hardware complementarity.",
+      "limitationZh": "實驗聚焦量子記憶；大規模延伸部分使用模擬，不能據此宣稱通用商業量子優勢已實現。",
+      "limitationEn": "The experiment focuses on quantum memory; larger-scale extensions include simulation, not proof of general commercial quantum advantage."
+    },
+    {
+      "id": "S10",
+      "title": "Fusion Science and Technology Roadmap",
+      "url": "https://www.energy.gov/documents/fusion-science-and-technology-roadmap",
+      "date": "2026-06",
+      "type": "government_research_roadmap",
+      "publisher": "U.S. Department of Energy",
+      "summaryZh": "路線圖列出材料、燃料循環、氚自給與整合運轉等缺口，規劃支持商業化的研究和測試。",
+      "summaryEn": "The roadmap identifies gaps in materials, fuel cycles, tritium self-sufficiency and integrated operation, and plans research and testing toward commercialization.",
+      "limitationZh": "路線圖的時程是目標，不是已完成的商業發電成果；文件也不承諾特定經費。",
+      "limitationEn": "Roadmap dates are targets, not achieved commercial generation; the document also does not commit specific funding."
+    }
+  ],
+  "horizons": [
+    {
+      "years": 10,
+      "year": 2036,
+      "evidenceLevel": "inference",
+      "themeZh": "AI 深入工作流程；機器人與電力基礎設施同步擴張",
+      "themeEn": "AI embedded in workflows, with robotics and power infrastructure expanding",
+      "rationaleZh": "目前的能力與採用趨勢支持優先追蹤 AI 軟體、自動化和支撐它們的電網／算力；工業機器人已有部署基礎。這是本簡報的條件式判斷。",
+      "rationaleEn": "Current capability and adoption evidence supports prioritizing AI software, automation and the grids and compute that support them; industrial robotics already has a deployment base. This is the brief's conditional judgment.",
+      "uncertaintyZh": "可靠性、整合成本、能源與組織變革可能限制擴張；AI 基準進步不等於每一份工作都能自動化。",
+      "uncertaintyEn": "Reliability, integration costs, energy and organizational change may constrain expansion; stronger AI benchmarks do not mean every job can be automated.",
+      "sourceIds": [
+        "S2",
+        "S5",
+        "S6",
+        "S7"
+      ],
+      "watchZh": "跨公司實測的任務完成率、總使用成本、持續採用率，以及電網接入時間。",
+      "watchEn": "Cross-company task success, total operating cost, sustained adoption and grid-connection times."
+    },
+    {
+      "years": 20,
+      "year": 2046,
+      "evidenceLevel": "inference",
+      "themeZh": "實體 AI 與可程式化生物工程成為重要候選",
+      "themeEn": "Physical AI and programmable biology become major candidates",
+      "rationaleZh": "如果通用操作與基因編輯的成本、可靠性和驗證取得進展，AI 可能從數位工作擴展到製造、照護與生物研發；兩条路線可以互補。",
+      "rationaleEn": "If general manipulation and gene editing improve in cost, reliability and validation, AI could extend from digital work into manufacturing, care and biological R&D; the two paths can complement each other.",
+      "uncertaintyZh": "沒有資料足以保證 2046 年普及；工廠機器人不能代表家庭能力，單一病人的治療也不能代表普遍醫療。",
+      "uncertaintyEn": "No evidence guarantees broad deployment by 2046; factory robots do not represent household capability, and one patient's treatment does not represent general medicine.",
+      "sourceIds": [
+        "S5",
+        "S7",
+        "S8"
+      ],
+      "watchZh": "陌生環境中的長時間可靠操作，以及多中心臨床結果、長期安全與製造成本。",
+      "watchEn": "Reliable long-duration operation in unfamiliar environments, plus multicentre clinical results, long-term safety and manufacturing costs."
+    },
+    {
+      "years": 30,
+      "year": 2056,
+      "evidenceLevel": "scenario",
+      "themeZh": "能源、計算與生物技術可能共同推動新一波產業變化",
+      "themeEn": "Energy, computing and biology could jointly drive another industrial shift",
+      "rationaleZh": "若低成本可靠能源和自動化研發成熟，可能加速新材料、生物製造及工業系統；量子計算與融合能源是需持續驗證的候選。",
+      "rationaleEn": "If reliable low-cost energy and automated R&D mature, they could accelerate materials, biomanufacturing and industrial systems; quantum computing and fusion remain candidates requiring continued validation.",
+      "uncertaintyZh": "這是情境，不是技術成熟年表。量子糾錯與融合研究里程碑都不等於有競爭力的完整商業系統。",
+      "uncertaintyEn": "This is a scenario, not a maturity timetable. Quantum error correction and fusion milestones do not equal competitive complete commercial systems.",
+      "sourceIds": [
+        "S1",
+        "S6",
+        "S8",
+        "S9",
+        "S10"
+      ],
+      "watchZh": "可重現的有用量子優勢；融合電廠的淨售電、運轉率、燃料供應與完整成本。",
+      "watchEn": "Reproducible useful quantum advantage; net electricity sold, availability, fuel supply and full costs for fusion plants."
+    },
+    {
+      "years": 40,
+      "year": 2066,
+      "evidenceLevel": "scenario",
+      "themeZh": "智慧、能源與生物工程的整合，或受瓶頸限制的緩慢擴散",
+      "themeEn": "Convergence of intelligence, energy and biology—or slow diffusion under constraints",
+      "rationaleZh": "可比較兩條路：多種技術互相加速，或資源、制度和安全要求使採用緩慢。歷史顯示發明、商業化和社會普及是不同階段。",
+      "rationaleEn": "Compare two paths: technologies accelerate one another, or resources, institutions and safety requirements slow adoption. History distinguishes invention, commercialization and broad diffusion.",
+      "uncertaintyZh": "40 年外無法可靠排出冠軍；這些來源只支撐今天的起點與機制，不直接預測 2066 年。",
+      "uncertaintyEn": "A winner cannot be ranked reliably 40 years ahead; these sources support present conditions and mechanisms, not a direct forecast for 2066.",
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S6",
+        "S8",
+        "S10"
+      ],
+      "watchZh": "成果是否跨產業、跨國普及，以及成本下降是否轉化為可觀察的生活與生產改善。",
+      "watchEn": "Whether gains diffuse across industries and countries, and whether falling costs translate into observable improvements in lives and production."
+    },
+    {
+      "years": 50,
+      "year": 2076,
+      "evidenceLevel": "scenario",
+      "themeZh": "保留未知突破；關注技術組合而非唯一接班者",
+      "themeEn": "Keep room for unknown breakthroughs; track combinations rather than one successor",
+      "rationaleZh": "可保留三種情境：AI 持續作為基礎設施；AI 與能源／生物技術融合；出現今天尚難辨識的新平台。這些情境用來檢查決策韌性。",
+      "rationaleEn": "Keep three scenarios: AI persists as infrastructure; AI converges with energy and biology; or a platform emerges that is hard to identify today. Use them to test the resilience of decisions.",
+      "uncertaintyZh": "現有學術證據無法支持指定 2076 年單一主導技術或精準機率；不把腦機介面、長生或太空產業直接列成必然結果。",
+      "uncertaintyEn": "Current scholarship cannot support a single dominant technology or precise probabilities for 2076; brain interfaces, radical longevity and space industries are not inevitable outcomes.",
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "watchZh": "定期以新證據重建候選清單，保留改變研究方向的能力。",
+      "watchEn": "Rebuild the candidate set as evidence changes and preserve the ability to change research direction."
+    }
+  ],
+  "historicalLessons": [
+    {
+      "id": "electrification",
+      "titleZh": "電氣化：配套變革讓發明成為效益",
+      "titleEn": "Electrification: complementary changes turn invention into gains",
+      "bodyZh": "工廠重設、組織與基礎建設共同影響擴散。類比到今天，AI 的價值也應檢查流程、資料與制度是否配合，而不只看模型分數。",
+      "bodyEn": "Factory redesign, organization and infrastructure jointly shaped diffusion. Applied as an analogy today, AI value should be assessed alongside workflows, data and institutions, not just model scores.",
+      "evidenceLevel": "inference",
+      "sourceIds": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "id": "pc-platforms",
+      "titleZh": "微軟與 PC：相容性和生態系可能比單點技術更關鍵",
+      "titleEn": "Microsoft and PCs: compatibility and ecosystems can matter more than isolated features",
+      "bodyZh": "Windows 的歷史提醒我們觀察開發者、相容性與使用者之間的回饋。但技術方向的重要性，與哪家公司最終獲益，是不同問題。",
+      "bodyEn": "Windows' history suggests watching feedback between developers, compatibility and users. A technology's importance and which company benefits are different questions.",
+      "evidenceLevel": "inference",
+      "sourceIds": [
+        "S3"
+      ]
+    },
+    {
+      "id": "smartphones",
+      "titleZh": "智慧型手機：成熟元件的整合也能創造新入口",
+      "titleEn": "Smartphones: integrating components can create a new access point",
+      "bodyZh": "iPhone 公告展示多種功能與新互動介面的組合。對未來的啟發是關注技術如何成為容易採用的產品；這份公告本身不證明成功原因。",
+      "bodyEn": "The iPhone announcement illustrates a combination of functions and a new interaction interface. A forward-looking lesson is to watch how technology becomes usable products; the announcement itself does not establish why it succeeded.",
+      "evidenceLevel": "inference",
+      "sourceIds": [
+        "S4"
+      ]
+    }
+  ],
+  "decisionTakeaways": [
+    {
+      "id": "portable-skills",
+      "titleZh": "把學習主軸放在可轉移能力",
+      "titleEn": "Build transferable capabilities",
+      "bodyZh": "對研究與職涯規劃，先培養統計、實驗設計、程式與 AI 工具能力，再深入一個真實領域；這比預先押定 2076 年的冠軍更容易隨證據調整。",
+      "bodyEn": "For research and career planning, build statistics, experimental design, programming and AI-tool skills, then depth in a real domain. This is easier to update than committing to a predicted winner in 2076.",
+      "evidenceLevel": "inference",
+      "sourceIds": [
+        "S1",
+        "S2",
+        "S5"
+      ]
+    },
+    {
+      "id": "bottlenecks",
+      "titleZh": "把研究題目對準尚未解決的瓶頸",
+      "titleEn": "Choose research problems around unresolved bottlenecks",
+      "bodyZh": "可比較 AI 的可靠性與評估、機器人的環境轉移、能源系統整合，或生物技術的驗證與製造；以自己的能力、資源及興趣篩選。",
+      "bodyEn": "Compare problems in AI reliability and evaluation, robot transfer across environments, energy-system integration, or biological validation and manufacturing; filter by your abilities, resources and interests.",
+      "evidenceLevel": "inference",
+      "sourceIds": [
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S10"
+      ]
+    },
+    {
+      "id": "milestones",
+      "titleZh": "用里程碑更新判斷",
+      "titleEn": "Update judgments using milestones",
+      "bodyZh": "記下什麼結果會讓你改變看法，例如可重現的外部測試、實際採用、成本與長期安全。把新聞、示範、商業訂單與驗證完成分開。",
+      "bodyEn": "Write down results that would change your view: reproducible external tests, actual adoption, costs and long-term safety. Distinguish announcements, demonstrations, commercial orders and completed validation.",
+      "evidenceLevel": "inference",
+      "sourceIds": [
+        "S5",
+        "S8",
+        "S9",
+        "S10"
+      ]
+    },
+    {
+      "id": "reversible-experiments",
+      "titleZh": "先用小型研究探索，再決定長期投入",
+      "titleEn": "Explore with small studies before long commitments",
+      "bodyZh": "挑一個候選領域，做短期文獻整理或可驗證小專題，記錄收穫與障礙，再比較下一步。這是決策建議，不是論文已驗證的最優配置。",
+      "bodyEn": "Choose a candidate field, complete a short literature scan or verifiable project, record gains and obstacles, then compare next steps. This is decision guidance, not an allocation proven optimal by the cited papers.",
+      "evidenceLevel": "inference",
+      "sourceIds": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "debateQuestions": [
+    {
+      "zh": "AI 是下一輪技術的競爭者，還是它們共同使用的基礎層？哪些觀察可以區分這兩種說法？",
+      "en": "Is AI a competitor to the next wave or an infrastructure layer shared by it? Which observations distinguish those views?"
+    },
+    {
+      "zh": "什麼證據能把機器人、生物工程、量子計算或融合能源，從實驗進展提升為可規模化產業？",
+      "en": "What evidence would move robotics, biological engineering, quantum computing or fusion from experimental progress to scalable industry?"
+    },
+    {
+      "zh": "如果技術進展比預期快或慢十年，今天的研究與學習選擇是否仍然合理？",
+      "en": "If progress is ten years faster or slower than expected, do today's research and learning choices still make sense?"
+    }
+  ]
+}
