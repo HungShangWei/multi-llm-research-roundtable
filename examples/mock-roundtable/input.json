@@ -1,0 +1,18 @@
+{
+  "note": "Synthetic example input written for this showcase. It is not a real research question from the author and contains no private data.",
+  "question": "Should a three-person research group move to one shared reference library this semester, or keep individual libraries until the next project starts?",
+  "topic": "general",
+  "answerLang": "en",
+  "depth": "standard",
+  "participants": ["mock-a", "mock-b"],
+  "chair": "mock-a",
+  "decision": {
+    "goal": "Choose a reference-management setup for a small research group",
+    "options": "Shared library now; keep individual libraries until the next project",
+    "constraints": "No budget for paid seats; two manuscripts are being drafted",
+    "timeframe": "This semester"
+  },
+  "evidence": "",
+  "attachments": [],
+  "useBrief": false
+}
