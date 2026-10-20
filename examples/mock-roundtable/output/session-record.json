@@ -1,0 +1,322 @@
+{
+  "protocolVersion": 3,
+  "depth": "standard",
+  "decision": {
+    "goal": "Choose a reference-management setup for a small research group",
+    "options": "Shared library now; keep individual libraries until the next project",
+    "constraints": "No budget for paid seats; two manuscripts are being drafted",
+    "timeframe": "This semester"
+  },
+  "question": "Should a three-person research group move to one shared reference library this semester, or keep individual libraries until the next project starts?",
+  "topic": "general",
+  "answerLang": "en",
+  "participants": [
+    "mock-a",
+    "mock-b"
+  ],
+  "chair": "mock-a",
+  "evidence": "",
+  "attachments": [],
+  "useBrief": false,
+  "id": "dbc11613-3dcd-44ec-ad57-9870e29c65a7",
+  "createdAt": "2026-10-19T18:02:07.353Z",
+  "updatedAt": "2026-10-19T18:02:07.367Z",
+  "status": "complete",
+  "messages": [
+    {
+      "id": "5f7f703d-620a-47d8-ba05-083ce99e27cc",
+      "provider": "mock-a",
+      "providerName": "Mock participant A",
+      "stage": "independent",
+      "stepKey": "independent:mock-a",
+      "basis": "question",
+      "model": null,
+      "modelProvenance": "fixed synthetic fixture (no live model call in this run)",
+      "usageModels": [],
+      "responseModels": [],
+      "requestedModel": "none (mocked)",
+      "requestedReasoningEffort": "none (mocked)",
+      "providerVersion": "mock",
+      "createdAt": "2026-10-19T18:02:07.355Z",
+      "text": "[MOCKED REPLY — fixed synthetic fixture; no live model was called during this example run]\nMOCK-REPLY-ID: independent:mock-a\n\nEvidence and retrieval status: no sources were opened (mocked example).\nIndependent assessment: under the stated constraints, one shared library would let the group clean up each reference record once instead of three times.\nAlternatives / falsifiers: if the two manuscripts depend on fixed citation keys, moving now could cause rework.\nConditional decision advice: move now only if citation keys can be preserved.\nSources: one placeholder, not a real publication.\n\n```roundtable-data\n{\n \"claims\": [\n  {\n   \"id\": \"C1\",\n   \"statement\": \"One shared library lets a small group maintain each reference record once.\",\n   \"sourceIds\": [\n    \"S1\"\n   ],\n   \"evidenceType\": \"inference\",\n   \"confidence\": \"Illustrative reasoning only.\",\n   \"limitations\": \"Mocked example; no evidence was consulted.\"\n  }\n ],\n \"sources\": [\n  {\n   \"id\": \"S1\",\n   \"title\": \"Placeholder source A (synthetic; not a real publication)\",\n   \"url\": \"https://example.org/synthetic/source-a\",\n   \"doi\": \"\",\n   \"quote\": \"\",\n   \"locator\": \"\",\n   \"reportedAccess\": \"not_read\"\n  }\n ],\n \"disputes\": [],\n \"summary\": {\n  \"recommendation\": \"Move to a shared library now if citation keys can be preserved.\",\n  \"options\": [\n   {\n    \"name\": \"Shared library now\",\n    \"benefits\": \"Records maintained once\",\n    \"tradeoffs\": \"Migration effort while two manuscripts are being drafted\",\n    \"conditions\": \"Citation keys are preserved\"\n   }\n  ],\n  \"nextSteps\": [\n   \"List the citation keys each manuscript in progress uses\"\n  ],\n  \"uncertainties\": [\n   \"Whether keys survive the move\"\n  ],\n  \"changes\": []\n }\n}\n```",
+      "usage": null,
+      "searches": null,
+      "manual": false
+    },
+    {
+      "id": "1d8147b2-4220-41d3-93f0-3e7fa5f674e8",
+      "provider": "mock-b",
+      "providerName": "Mock participant B",
+      "stage": "independent",
+      "stepKey": "independent:mock-b",
+      "basis": "question",
+      "model": null,
+      "modelProvenance": "fixed synthetic fixture (no live model call in this run)",
+      "usageModels": [],
+      "responseModels": [],
+      "requestedModel": "none (mocked)",
+      "requestedReasoningEffort": "none (mocked)",
+      "providerVersion": "mock",
+      "createdAt": "2026-10-19T18:02:07.355Z",
+      "text": "[MOCKED REPLY — fixed synthetic fixture; no live model was called during this example run]\nMOCK-REPLY-ID: independent:mock-b\n\nEvidence and retrieval status: no sources were opened (mocked example).\nIndependent assessment: two manuscripts are mid-draft; changing the library now risks altered citation keys and broken in-text citations at a busy time.\nAlternatives / falsifiers: if a test import shows the keys are unchanged, this risk is small.\nConditional decision advice: keep individual libraries until the next project starts.\nSources: one placeholder, not a real publication.\n\n```roundtable-data\n{\n \"claims\": [\n  {\n   \"id\": \"C1\",\n   \"statement\": \"Changing libraries during active drafting can alter citation keys and create rework.\",\n   \"sourceIds\": [\n    \"S1\"\n   ],\n   \"evidenceType\": \"inference\",\n   \"confidence\": \"Illustrative reasoning only.\",\n   \"limitations\": \"Mocked example; no evidence was consulted.\"\n  }\n ],\n \"sources\": [\n  {\n   \"id\": \"S1\",\n   \"title\": \"Placeholder source B (synthetic; not a real publication)\",\n   \"url\": \"https://example.org/synthetic/source-b\",\n   \"doi\": \"\",\n   \"quote\": \"\",\n   \"locator\": \"\",\n   \"reportedAccess\": \"not_read\"\n  }\n ],\n \"disputes\": [],\n \"summary\": {\n  \"recommendation\": \"Wait until the next project starts.\",\n  \"options\": [\n   {\n    \"name\": \"Keep individual libraries for now\",\n    \"benefits\": \"No disruption to drafts in progress\",\n    \"tradeoffs\": \"Duplicate maintenance continues\",\n    \"conditions\": \"The manuscripts depend on their current keys\"\n   }\n  ],\n  \"nextSteps\": [\n   \"Revisit at the start of the next project\"\n  ],\n  \"uncertainties\": [\n   \"How much the duplicate maintenance actually costs\"\n  ],\n  \"changes\": []\n }\n}\n```",
+      "usage": null,
+      "searches": null,
+      "manual": false
+    },
+    {
+      "id": "0f628d50-fa10-4bbf-afc7-838e8bed7a0a",
+      "provider": "mock-a",
+      "providerName": "Mock participant A",
+      "stage": "critique",
+      "stepKey": "critique:mock-a",
+      "basis": "[\"5f7f703d-620a-47d8-ba05-083ce99e27cc\",\"1d8147b2-4220-41d3-93f0-3e7fa5f674e8\"]",
+      "model": null,
+      "modelProvenance": "fixed synthetic fixture (no live model call in this run)",
+      "usageModels": [],
+      "responseModels": [],
+      "requestedModel": "none (mocked)",
+      "requestedReasoningEffort": "none (mocked)",
+      "providerVersion": "mock",
+      "createdAt": "2026-10-19T18:02:07.356Z",
+      "text": "[MOCKED REPLY — fixed synthetic fixture; no live model was called during this example run]\nMOCK-REPLY-ID: critique:mock-a\n\nCross-examination: Participant 2 raises a risk that my first answer treated only as a condition. The disagreement is testable: does a move change the keys used by the manuscripts in progress? I revise my advice from \"move now\" to \"test first\". Unresolved: the key-preservation question.\n\n```roundtable-data\n{\n \"claims\": [\n  {\n   \"id\": \"C1\",\n   \"statement\": \"The decision depends on a testable question: whether citation keys change on import.\",\n   \"sourceIds\": [],\n   \"evidenceType\": \"inference\",\n   \"confidence\": \"Illustrative reasoning only.\",\n   \"limitations\": \"Mocked example.\"\n  }\n ],\n \"sources\": [],\n \"disputes\": [\n  {\n   \"question\": \"Would moving to one shared library mid-semester change the citation keys used by the two manuscripts in progress?\",\n   \"positions\": \"Participant 1: low risk if keys are exported and preserved. Participant 2: high risk for drafts in progress.\",\n   \"whyItMatters\": \"Decides whether a move now creates rework for two manuscripts.\",\n   \"whatToCheck\": \"Export one manuscript library, import it into a test shared library and compare citation keys.\",\n   \"status\": \"open\",\n   \"reason\": \"Neither side has tested this; both positions are assumptions.\",\n   \"sourceIds\": []\n  }\n ],\n \"summary\": {\n  \"recommendation\": \"Test key preservation before deciding.\",\n  \"options\": [],\n  \"nextSteps\": [\n   \"Run an export/import comparison on one manuscript\"\n  ],\n  \"uncertainties\": [\n   \"Result of the key comparison\"\n  ],\n  \"changes\": [\n   \"Changed from \\\"move now\\\" to \\\"test first\\\"\"\n  ]\n }\n}\n```",
+      "usage": null,
+      "searches": null,
+      "manual": false
+    },
+    {
+      "id": "4e928bf9-b7f3-4588-ad0a-5d7e85ebf40a",
+      "provider": "mock-b",
+      "providerName": "Mock participant B",
+      "stage": "critique",
+      "stepKey": "critique:mock-b",
+      "basis": "[\"5f7f703d-620a-47d8-ba05-083ce99e27cc\",\"1d8147b2-4220-41d3-93f0-3e7fa5f674e8\"]",
+      "model": null,
+      "modelProvenance": "fixed synthetic fixture (no live model call in this run)",
+      "usageModels": [],
+      "responseModels": [],
+      "requestedModel": "none (mocked)",
+      "requestedReasoningEffort": "none (mocked)",
+      "providerVersion": "mock",
+      "createdAt": "2026-10-19T18:02:07.357Z",
+      "text": "[MOCKED REPLY — fixed synthetic fixture; no live model was called during this example run]\nMOCK-REPLY-ID: critique:mock-b\n\nCross-examination: Participant 1's benefit is real but does not depend on timing; it can be realized at the next project. I keep my recommendation but agree that the risk can be tested.\n\n```roundtable-data\n{\n \"claims\": [\n  {\n   \"id\": \"C1\",\n   \"statement\": \"The benefit of a shared library does not require switching mid-semester.\",\n   \"sourceIds\": [],\n   \"evidenceType\": \"inference\",\n   \"confidence\": \"Illustrative reasoning only.\",\n   \"limitations\": \"Mocked example.\"\n  }\n ],\n \"sources\": [],\n \"disputes\": [\n  {\n   \"question\": \"Would moving to one shared library mid-semester change the citation keys used by the two manuscripts in progress?\",\n   \"positions\": \"Participant 1: low risk if keys are preserved. Participant 2: plausible risk; wait.\",\n   \"whyItMatters\": \"Timing of the change.\",\n   \"whatToCheck\": \"The same export/import comparison.\",\n   \"status\": \"open\",\n   \"reason\": \"The risk is plausible but untested.\",\n   \"sourceIds\": []\n  }\n ],\n \"summary\": {\n  \"recommendation\": \"Wait, but run the key comparison now.\",\n  \"options\": [],\n  \"nextSteps\": [\n   \"Run the key comparison\"\n  ],\n  \"uncertainties\": [],\n  \"changes\": []\n }\n}\n```",
+      "usage": null,
+      "searches": null,
+      "manual": false
+    },
+    {
+      "id": "980909ab-134c-4aaa-b494-6e68223ff0f2",
+      "provider": "mock-a",
+      "providerName": "Mock participant A",
+      "stage": "verification",
+      "stepKey": "verification:0:mock-a",
+      "basis": "[\"5f7f703d-620a-47d8-ba05-083ce99e27cc\",\"1d8147b2-4220-41d3-93f0-3e7fa5f674e8\",\"0f628d50-fa10-4bbf-afc7-838e8bed7a0a\",\"4e928bf9-b7f3-4588-ad0a-5d7e85ebf40a\"]",
+      "model": null,
+      "modelProvenance": "fixed synthetic fixture (no live model call in this run)",
+      "usageModels": [],
+      "responseModels": [],
+      "requestedModel": "none (mocked)",
+      "requestedReasoningEffort": "none (mocked)",
+      "providerVersion": "mock",
+      "createdAt": "2026-10-19T18:02:07.360Z",
+      "text": "[MOCKED REPLY — fixed synthetic fixture; no live model was called during this example run]\nMOCK-REPLY-ID: verification:0:mock-a\n\nTargeted check (mocked): no check was actually performed in this example. The fixture marks the issue \"partly resolved\" only to show how a status change and its stated reason are stored in the issue history.\n\n```roundtable-data\n{\n \"claims\": [\n  {\n   \"id\": \"C1\",\n   \"statement\": \"The key-preservation question can be tested on one manuscript before any group-wide change.\",\n   \"sourceIds\": [\n    \"S1\"\n   ],\n   \"evidenceType\": \"inference\",\n   \"confidence\": \"Illustrative reasoning only.\",\n   \"limitations\": \"Mocked example; the test was specified, not run.\"\n  }\n ],\n \"sources\": [\n  {\n   \"id\": \"S1\",\n   \"title\": \"Placeholder source C (synthetic; not a real publication)\",\n   \"url\": \"https://example.org/synthetic/source-c\",\n   \"doi\": \"\",\n   \"quote\": \"\",\n   \"locator\": \"\",\n   \"reportedAccess\": \"not_read\"\n  }\n ],\n \"disputes\": [\n  {\n   \"question\": \"Would moving to one shared library mid-semester change the citation keys used by the two manuscripts in progress?\",\n   \"issueId\": \"issue-2418600bf68e082a\",\n   \"positions\": \"Both positions retained; a test procedure is now specified but has not been run.\",\n   \"whyItMatters\": \"Decides whether a move now creates rework.\",\n   \"whatToCheck\": \"Run the export/import comparison on one manuscript.\",\n   \"status\": \"partly_resolved\",\n   \"reason\": \"Mocked status change for illustration: the check procedure is specified, but no result exists.\",\n   \"sourceIds\": [\n    \"S1\"\n   ]\n  }\n ],\n \"summary\": {\n  \"recommendation\": \"Specify and run the key comparison before deciding.\",\n  \"options\": [],\n  \"nextSteps\": [],\n  \"uncertainties\": [\n   \"Comparison result\"\n  ],\n  \"changes\": []\n }\n}\n```",
+      "usage": null,
+      "searches": null,
+      "manual": false
+    },
+    {
+      "id": "16a01a43-ae30-4002-a4d7-82ff6a339a46",
+      "provider": "mock-a",
+      "providerName": "Mock participant A",
+      "stage": "synthesis",
+      "stepKey": "synthesis:mock-a",
+      "basis": "[\"5f7f703d-620a-47d8-ba05-083ce99e27cc\",\"1d8147b2-4220-41d3-93f0-3e7fa5f674e8\",\"0f628d50-fa10-4bbf-afc7-838e8bed7a0a\",\"4e928bf9-b7f3-4588-ad0a-5d7e85ebf40a\",\"980909ab-134c-4aaa-b494-6e68223ff0f2\"]",
+      "model": null,
+      "modelProvenance": "fixed synthetic fixture (no live model call in this run)",
+      "usageModels": [],
+      "responseModels": [],
+      "requestedModel": "none (mocked)",
+      "requestedReasoningEffort": "none (mocked)",
+      "providerVersion": "mock",
+      "createdAt": "2026-10-19T18:02:07.365Z",
+      "text": "[MOCKED REPLY — fixed synthetic fixture; no live model was called during this example run]\nMOCK-REPLY-ID: synthesis:mock-a\n\nChair synthesis (mocked).\nAgreement: both participants accept that maintaining records once is useful and that changed citation keys would cause rework.\nUnresolved dissent: whether to move this semester. Participant 2 still prefers waiting; Participant 1 now prefers a test first.\nConditional recommendation: keep individual libraries for the two manuscripts in progress, run the key-preservation test on one manuscript, and adopt the shared library for the next project if the test passes.\nWhat remains unchecked: no sources were opened; every source check in this example is mocked.\n\n```roundtable-data\n{\n \"claims\": [\n  {\n   \"id\": \"C1\",\n   \"statement\": \"A key-preservation test on one manuscript lowers the risk of a group-wide change.\",\n   \"sourceIds\": [\n    \"S1\"\n   ],\n   \"evidenceType\": \"inference\",\n   \"confidence\": \"Illustrative reasoning only.\",\n   \"limitations\": \"Mocked example.\"\n  }\n ],\n \"sources\": [\n  {\n   \"id\": \"S1\",\n   \"title\": \"Placeholder source A (synthetic; not a real publication)\",\n   \"url\": \"https://example.org/synthetic/source-a\",\n   \"doi\": \"\",\n   \"quote\": \"\",\n   \"locator\": \"\",\n   \"reportedAccess\": \"not_read\"\n  },\n  {\n   \"id\": \"S2\",\n   \"title\": \"Placeholder source D (synthetic; not a real publication)\",\n   \"url\": \"https://example.org/synthetic/source-d\",\n   \"doi\": \"\",\n   \"quote\": \"\",\n   \"locator\": \"\",\n   \"reportedAccess\": \"not_read\"\n  }\n ],\n \"disputes\": [\n  {\n   \"question\": \"Would moving to one shared library mid-semester change the citation keys used by the two manuscripts in progress?\",\n   \"issueId\": \"issue-2418600bf68e082a\",\n   \"positions\": \"Participant 1: test first, then move. Participant 2: wait for the next project.\",\n   \"whyItMatters\": \"Timing and rework risk.\",\n   \"whatToCheck\": \"Result of the export/import comparison.\",\n   \"status\": \"partly_resolved\",\n   \"reason\": \"Test specified, not run; dissent on timing remains.\",\n   \"sourceIds\": [\n    \"S1\"\n   ]\n  }\n ],\n \"summary\": {\n  \"recommendation\": \"Keep individual libraries for the manuscripts in progress; adopt a shared library for the next project if a key-preservation test passes.\",\n  \"options\": [\n   {\n    \"name\": \"Shared library now\",\n    \"benefits\": \"Records maintained once, sooner\",\n    \"tradeoffs\": \"Rework risk for drafts in progress\",\n    \"conditions\": \"Key test passes before the move\"\n   },\n   {\n    \"name\": \"Shared library at the next project\",\n    \"benefits\": \"No disruption to current drafts\",\n    \"tradeoffs\": \"Duplicate maintenance continues this semester\",\n    \"conditions\": \"Default if the test is not run\"\n   }\n  ],\n  \"nextSteps\": [\n   \"Run the export/import key comparison on one manuscript\",\n   \"Decide at the start of the next project\"\n  ],\n  \"uncertainties\": [\n   \"Result of the key comparison\"\n  ],\n  \"changes\": []\n }\n}\n```",
+      "usage": null,
+      "searches": null,
+      "manual": false,
+      "evidenceReview": [
+        {
+          "sourceId": "5f7f703d-620a-47d8-ba05-083ce99e27cc:S1",
+          "identity": "[\"https://example.org/synthetic/source-a\",\"\",\"Placeholder source A (synthetic; not a real publication)\",\"\"]",
+          "source": {
+            "title": "Placeholder source A (synthetic; not a real publication)",
+            "url": "https://example.org/synthetic/source-a",
+            "doi": "",
+            "quote": "",
+            "locator": "",
+            "provider": "mock-a",
+            "stage": "independent",
+            "manual": false
+          },
+          "check": {
+            "status": "unavailable",
+            "checkedAt": "2026-10-19T18:02:07.364Z",
+            "metadata": null,
+            "retrievedUrl": null,
+            "access": "unavailable",
+            "quoteMatch": null,
+            "note": "MOCKED source check for this example: no network request was made. In the prototype, lib/evidence.mjs would retrieve Crossref metadata/abstract or public page text here."
+          }
+        },
+        {
+          "sourceId": "1d8147b2-4220-41d3-93f0-3e7fa5f674e8:S1",
+          "identity": "[\"https://example.org/synthetic/source-b\",\"\",\"Placeholder source B (synthetic; not a real publication)\",\"\"]",
+          "source": {
+            "title": "Placeholder source B (synthetic; not a real publication)",
+            "url": "https://example.org/synthetic/source-b",
+            "doi": "",
+            "quote": "",
+            "locator": "",
+            "provider": "mock-b",
+            "stage": "independent",
+            "manual": false
+          },
+          "check": {
+            "status": "unavailable",
+            "checkedAt": "2026-10-19T18:02:07.363Z",
+            "metadata": null,
+            "retrievedUrl": null,
+            "access": "unavailable",
+            "quoteMatch": null,
+            "note": "MOCKED source check for this example: no network request was made. In the prototype, lib/evidence.mjs would retrieve Crossref metadata/abstract or public page text here."
+          }
+        },
+        {
+          "sourceId": "980909ab-134c-4aaa-b494-6e68223ff0f2:S1",
+          "identity": "[\"https://example.org/synthetic/source-c\",\"\",\"Placeholder source C (synthetic; not a real publication)\",\"\"]",
+          "source": {
+            "title": "Placeholder source C (synthetic; not a real publication)",
+            "url": "https://example.org/synthetic/source-c",
+            "doi": "",
+            "quote": "",
+            "locator": "",
+            "provider": "mock-a",
+            "stage": "verification",
+            "manual": false
+          },
+          "check": {
+            "status": "unavailable",
+            "checkedAt": "2026-10-19T18:02:07.362Z",
+            "metadata": null,
+            "retrievedUrl": null,
+            "access": "unavailable",
+            "quoteMatch": null,
+            "note": "MOCKED source check for this example: no network request was made. In the prototype, lib/evidence.mjs would retrieve Crossref metadata/abstract or public page text here."
+          }
+        }
+      ]
+    }
+  ],
+  "briefAsOf": null,
+  "modelSnapshot": {
+    "mock-a": {
+      "model": "",
+      "binary": "(none: mocked runner)",
+      "version": "mock",
+      "reasoningEffort": null
+    },
+    "mock-b": {
+      "model": "",
+      "binary": "(none: mocked runner)",
+      "version": "mock",
+      "reasoningEffort": null
+    }
+  },
+  "error": null,
+  "mode": "roundtable",
+  "runStartedAt": "2026-10-19T18:02:07.354Z",
+  "runFinishedAt": "2026-10-19T18:02:07.367Z",
+  "attempts": 1,
+  "currentStage": null,
+  "currentProvider": null,
+  "currentStep": null,
+  "stepStartedAt": "2026-10-19T18:02:07.366Z",
+  "verificationPlan": [
+    {
+      "key": "verification:0:mock-a",
+      "stage": "verification",
+      "provider": "mock-a",
+      "targets": [
+        {
+          "id": "4e928bf9-b7f3-4588-ad0a-5d7e85ebf40a:D1",
+          "question": "Would moving to one shared library mid-semester change the citation keys used by the two manuscripts in progress?",
+          "positions": "Participant 1: low risk if keys are preserved. Participant 2: plausible risk; wait.",
+          "whyItMatters": "Timing of the change.",
+          "whatToCheck": "The same export/import comparison.",
+          "status": "open",
+          "issueId": "issue-2418600bf68e082a",
+          "reason": "The risk is plausible but untested.",
+          "sourceIds": [],
+          "messageId": "4e928bf9-b7f3-4588-ad0a-5d7e85ebf40a",
+          "stage": "critique",
+          "provider": "mock-b",
+          "providerName": "Mock participant B",
+          "createdAt": "2026-10-19T18:02:07.357Z",
+          "manual": false,
+          "stale": false,
+          "hasConflictingAssessments": false
+        }
+      ]
+    }
+  ],
+  "sourceCheckPhase": null,
+  "sourceChecks": {
+    "980909ab-134c-4aaa-b494-6e68223ff0f2:S1": {
+      "status": "unavailable",
+      "checkedAt": "2026-10-19T18:02:07.362Z",
+      "metadata": null,
+      "retrievedUrl": null,
+      "access": "unavailable",
+      "quoteMatch": null,
+      "note": "MOCKED source check for this example: no network request was made. In the prototype, lib/evidence.mjs would retrieve Crossref metadata/abstract or public page text here."
+    },
+    "1d8147b2-4220-41d3-93f0-3e7fa5f674e8:S1": {
+      "status": "unavailable",
+      "checkedAt": "2026-10-19T18:02:07.363Z",
+      "metadata": null,
+      "retrievedUrl": null,
+      "access": "unavailable",
+      "quoteMatch": null,
+      "note": "MOCKED source check for this example: no network request was made. In the prototype, lib/evidence.mjs would retrieve Crossref metadata/abstract or public page text here."
+    },
+    "5f7f703d-620a-47d8-ba05-083ce99e27cc:S1": {
+      "status": "unavailable",
+      "checkedAt": "2026-10-19T18:02:07.364Z",
+      "metadata": null,
+      "retrievedUrl": null,
+      "access": "unavailable",
+      "quoteMatch": null,
+      "note": "MOCKED source check for this example: no network request was made. In the prototype, lib/evidence.mjs would retrieve Crossref metadata/abstract or public page text here."
+    },
+    "16a01a43-ae30-4002-a4d7-82ff6a339a46:S1": {
+      "status": "unavailable",
+      "checkedAt": "2026-10-19T18:02:07.364Z",
+      "metadata": null,
+      "retrievedUrl": null,
+      "access": "unavailable",
+      "quoteMatch": null,
+      "note": "MOCKED source check for this example: no network request was made. In the prototype, lib/evidence.mjs would retrieve Crossref metadata/abstract or public page text here."
+    },
+    "16a01a43-ae30-4002-a4d7-82ff6a339a46:S2": {
+      "status": "unavailable",
+      "checkedAt": "2026-10-19T18:02:07.367Z",
+      "metadata": null,
+      "retrievedUrl": null,
+      "access": "unavailable",
+      "quoteMatch": null,
+      "note": "MOCKED source check for this example: no network request was made. In the prototype, lib/evidence.mjs would retrieve Crossref metadata/abstract or public page text here."
+    }
+  },
+  "sourceCheckReuse": {
+    "16a01a43-ae30-4002-a4d7-82ff6a339a46:S1": "5f7f703d-620a-47d8-ba05-083ce99e27cc:S1"
+  },
+  "completedAt": "2026-10-19T18:02:07.367Z"
+}
