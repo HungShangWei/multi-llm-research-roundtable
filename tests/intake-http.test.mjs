@@ -1,0 +1,28 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {spawn} from 'node:child_process';
+import {mkdtemp,rm,readFile} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import path from 'node:path';
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+test('HTTP intake, isolated evaluation storage, token checks, and bilingual guidance contracts',async t=>{
+ const directory=await mkdtemp(path.join(tmpdir(),'rt-v6-http-'));
+ const port=20000+Math.floor(Math.random()*15000),base=`http://127.0.0.1:${port}`;
+ let output='';const child=spawn(process.execPath,['server.mjs'],{cwd:new URL('..',import.meta.url),env:{...process.env,ROUNDTABLE_PORT:String(port),ROUNDTABLE_DATA_DIR:path.join(directory,'data'),ROUNDTABLE_RUNTIME_DIR:path.join(directory,'runtime')},stdio:['ignore','pipe','pipe']});child.stdout.on('data',d=>output+=d);child.stderr.on('data',d=>output+=d);
+ t.after(async()=>{child.kill('SIGTERM');await Promise.race([new Promise(r=>child.once('exit',r)),sleep(1500)]);if(child.exitCode===null)child.kill('SIGKILL');await rm(directory,{recursive:true,force:true})});
+ let bootstrap;for(let i=0;i<100;i++){try{const r=await fetch(base+'/api/bootstrap');if(r.ok){bootstrap=await r.json();break}}catch{}await sleep(30)}assert.ok(bootstrap,output);assert.equal(bootstrap.service.version,'0.6.0');
+ const request=async(url,method='GET',body)=>{const r=await fetch(base+url,{method,headers:{'Content-Type':'application/json','X-Roundtable-Token':bootstrap.token},body:body===undefined?undefined:JSON.stringify(body)});return {status:r.status,data:await r.json()}};
+ const input={question:'Future technologies for a research career?',topic:'technology',answerLang:'en',participants:['codex','claude'],chair:'codex'};
+ assert.equal((await fetch(base+'/api/clarify',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(input)})).status,403);
+ const plan=await request('/api/clarify','POST',input);assert.equal(plan.status,200);assert.equal(plan.data.questions.length,2);
+ const saved=await request('/api/sessions','POST',{...input,clarification:{version:1,answers:{decision_goal:'research'},skipped:['decision_constraints']}});assert.equal(saved.data.decision.goal,'Choose a research direction');assert.equal(saved.data.clarification.records[1].skipped,true);
+ const reload=await request('/api/sessions/'+saved.data.id);assert.deepEqual(reload.data.clarification,saved.data.clarification);assert.equal(reload.data.messages.length,0);
+ const suite=(await request('/api/evaluation-suite')).data;assert.equal(suite.cases.length,6);
+ const invalid=await request('/api/evaluations','POST',{caseId:suite.cases[0].id,participants:['unknown','codex'],chair:'codex'});assert.equal(invalid.status,400);assert.ok(invalid.data.issue.code);
+ const created=await request('/api/evaluations','POST',{caseId:suite.cases[0].id,participants:['codex','claude'],chair:'codex',depth:'overview',answerLanguage:'en'});assert.equal(created.status,201,JSON.stringify(created.data));assert.equal(created.data.status,'queued');assert.equal(created.data.mapping,undefined);assert.equal(created.data.fixture,false);assert.equal(created.data.arms.A.metrics,null);
+ const evaluations=(await request('/api/evaluations')).data.evaluations;assert.equal(evaluations.length,1);assert.equal((await request('/api/sessions')).data.sessions.length,1);
+ assert.equal((await request('/api/evaluations/'+created.data.id+'/export')).status,400);
+ assert.equal((await request('/api/evaluations/'+created.data.id+'/rate','POST',{side:'A',citationSupport:5,reason:'No generated response'})).status,400);
+ assert.equal((await request('/api/sessions/'+saved.data.id,'DELETE',{})).status,200);assert.equal((await request('/api/trash')).data.sessions.length,1);assert.equal((await request('/api/trash/'+saved.data.id+'/restore','POST',{})).status,200);
+ assert.equal((await request('/api/sessions/'+saved.data.id)).data.clarification.records[0].answer,'Choose a research direction');
+});
