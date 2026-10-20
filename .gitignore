@@ -1,0 +1,14 @@
+# Local data created by `npm start` — may contain private questions and answers
+sessions/
+.runtime/
+
+# Dependencies, OS and editor files
+node_modules/
+.DS_Store
+*.tmp
+
+# Never commit credentials or local configuration
+.env
+.env.*
+*.pem
+*.key
